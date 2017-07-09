@@ -1,5 +1,6 @@
 import selenium
 from selenium import webdriver
+from Q.employeesSignIn import Dtech
 
 test1 = webdriver.Firefox()
 
@@ -19,3 +20,7 @@ if findCheckBoxSelected(checkBox) == False:
     print("we did it")
 else: 
     print ("should be selected")
+
+
+Dtech.close()
+
